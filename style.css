@@ -1,0 +1,142 @@
+
+
+*{
+    image-rendering: pixelated;
+    box-sizing: border-box;
+    transition: background-color .5s;
+}
+
+body{
+    background-color: #eee;
+    color: rgb(2, 106, 251);
+    text-shadow: none;
+    opacity: 1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    word-spacing: 2px;
+}
+
+header{
+    position: sticky;
+    background-color: aliceblue;
+    line-height: normal;
+    border: 1px solid red;
+}
+
+header h1, header nav{
+    position: fixed;
+    top: 0;
+    width: 50%;
+    line-height: normal;
+    background: snow;
+    padding: 12px;
+    margin: 0;
+    min-height: 12vh;
+}
+header h1{
+    position: fixed;
+
+}
+header nav{
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 5;
+}
+
+header nav li{
+    float: left;
+    list-style: none;
+    padding-right: 15%;
+}
+
+header h1{
+    position: relative;
+}
+
+aside{
+    display: grid;
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    align-content: center;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+    background-color: hsla(51, 15%, 67%, 0.7);
+}
+
+main nav {
+    width: 50%;
+    display: inline-block;
+}
+
+main nav li{
+    margin-bottom: 5px;
+    width: 80%;
+    list-style-image: url("marker.png");
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(212, 210, 210);
+    padding: 12px;
+}
+h2:hover{
+    background-color: rgb(219, 215, 215);
+}
+
+aside:hover{
+    border: none;
+    outline: 3px solid salmon;
+}
+
+p{
+    text-indent: 12px;
+}
+
+blockquote {
+    text-align: center;
+}
+
+caption{
+    color: aqua;
+    box-shadow: 1px -1px 2px red;
+}
+
+blockquote{
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+blockquote div{
+    height: 300px;
+    width: 300px;
+    background-color: #eee;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px black;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer{
+    border-top: 1px dashed black;
+    background-color: gainsboro;
+    margin: 0;
+    outline: none;
+    padding: 1%;
+    text-align: center;
+}
+
+footer li{
+    width: 45%;
+    max-width: 45%;
+    display: inline-block;
+    margin-bottom: 4px;
+}
