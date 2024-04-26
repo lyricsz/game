@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Promise Onaleye" />
+    <meta name="description" content="Have fun playing games" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Games Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.ico" type="icon/x-ref" />
+</head>
+<body>
+    <header>
+        <h1>Lyricsz&nbsp;Games&nbsp;Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr />
+        <blockquote>
+            <p>I Love My Games, But is game really fun?</p>
+            <caption>Quotes of The Day</caption>
+        </blockquote>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#addi">Pros & Cons</a></li>
+                <li><a href="#store">Games Store</a></li>
+            </ul>
+        </nav>
+        <h2 id="introduction">About - Lyricsz</h2>
+        <p>Hello once again... This is <strong>Lyricsz About Page</strong>. And we're here to know more about who they are... </p>
+        <p>Lyricsz is created by a small group of 3 in 2021. Back in the days, it was created for one main service... <i>To serve the world with Song Lyrics</i>. Lot of development has 
+        happened over the years... They (<strong>The Lyricsz Team</strong>) shift from just text to <b>Lyric Videos</b>. However, this isn't what most of us expect... </p>
+        <p>This is a <b>Game Developers</b> website not Lyricist. A nanosecond... </p>
+        <p>In 2023, Lyricsz published apps that relate to song lyrics. And officially shift some of their focuses to creating apps, but met disappointment due to <b><i>Copyright Issues</i></b>. Recently as of late 2023 and early 2024, the team has changed their main focus to both <b>Games</b> and <b>Song lyric videos</b>. And that's what gave birth to what you're viewing right now... Let's check their main projects over the years</p>
+        <div id="mainProjects">
+            <!-- Game Projects -->
+            <h2 style="width: 50%;">Games</h2>
+            <nav>
+                <ul id="gameList">
+
+                </ul>
+            </nav>
+            <p>Learn more by visiting the <a href="https://lyricsz.itch.io/"><strong>Lyricsz Official Itch Page(For all Lyricsz Games)</strong></a></p>
+
+            <!-- Videos -->
+            <h2 style="width: 50%;">Videos </h2>
+            <nav>
+                <ul id="videos">
+
+                </ul>
+            </nav>
+        </div>
+
+        
+        <h2 id="store">Games Store </h2>
+        <p>Games are fun!!! Fun + More Fun + Most Fun === Less Worries. Let's interact today, kindly contact us if you wish to volunteer at the development of our games. If not, Surely check out our fun games, and don't forget to give feedbacks...</p>
+        <blockquote>
+            <div id="div">
+                <img src="marker.png" width="100%" />
+            </div>
+        </blockquote>
+    </main>
+    <footer>
+        <ul>
+            <li>Back to Top</li>
+            <br />
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Support</li>
+            <li>Sitemap</li>
+            <li>Privacy and Policy</li>
+        </ul>
+    </footer>
+
+    <script>
+        (function() {
+            let gameList = document.getElementById("gameList");
+            let listOfGames = ["Valentine Quix Us", "Santa Please Concentrate", "Cheaters World", "My Math Booster"];
+            let videosList = document.getElementById("vidoes");
+            let videos = [
+                {
+                    video: "Rema Official Lyrics",
+                    videoLink: ""
+                },
+
+            ]
+
+            listOfGames = listOfGames.sort()
+            distributeGames(listOfGames, gameList)
+        }())
+
+        function distributeGames(games, gameList){
+
+            for (let i = 0; i < games.length; i++){
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                let link = games[i].toLowerCase();
+                while(link.includes(" ")){
+                    link = link.replace(" ", "-");
+                }
+                a.href = `https://lyricsz.itch.io/${link}`;
+                a.innerText = games[i];
+                li.appendChild(a);
+                gameList.appendChild(li);
+            }
+        }
+        function distributeVideos(videos, videosList){
+            for (let i = 0; i < videos.length; i++){
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                let link = games[i].toLowerCase();
+                while(link.includes(" ")){
+                    link = link.replace(" ", "-");
+                }
+                a.href = `https://lyricsz.itch.io/${link}`;
+                a.innerText = games[i];
+                li.appendChild(a);
+                gameList.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>
